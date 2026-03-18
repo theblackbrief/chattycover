@@ -325,6 +325,15 @@ footer{
 }
 </style>
 </head>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('video');
+    if (video) {
+      video.muted = true;
+      video.play().catch(function(e) {});
+    }
+  });
+</script>
 <body>
 
 <!-- NAV -->
